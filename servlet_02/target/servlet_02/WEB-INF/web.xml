@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0"
+         metadata-complete="true">
+
+
+  <servlet>
+    <servlet-name>getname</servlet-name>
+    <servlet-class>com.kuang.servlet.getname</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getname</servlet-name>
+    <url-pattern>/getname</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>setname</servlet-name>
+    <servlet-class>com.kuang.servlet.setname</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>setname</servlet-name>
+    <url-pattern>/setname</url-pattern>
+  </servlet-mapping>
+</web-app>
