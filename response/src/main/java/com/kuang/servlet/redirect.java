@@ -1,19 +1,20 @@
 package com.kuang.servlet;
 
+import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.io.PrintWriter;
 
-public class helloservlet extends HttpServlet {
-    @Override
+public class redirect extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        PrintWriter writer = resp.getWriter();
 
-        PrintWriter writer = new PrintWriter(resp.getWriter());
-        writer.write("ok!!!!!!");
+        String username = req.getParameter("username");
+        String password = req.getParameter("password");
+        resp.sendRedirect("/response_war/success.jsp");
 
     }
 

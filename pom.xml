@@ -11,6 +11,8 @@
     <modules>
         <module>servlet_01</module>
         <module>servlet_02</module>
+        <module>response</module>
+        <module>request</module>
 
     </modules>
 
