@@ -12,7 +12,7 @@ public class session extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
-        session.setAttribute("name","good");
+        session.setAttribute("name",new person("good",10));
         if (session.isNew()){
             resp.getWriter().write("session created");
 
